@@ -1,0 +1,440 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+    height: 100%;
+}
+
+#header {
+    color: white;
+    
+    padding: 8px;
+    background-image: linear-gradient(to right, #bf00ff, #0040ff);    
+}
+
+#header nav {
+    text-align: right;
+}
+
+#header h2 {
+    float: left;
+    margin: 0px;
+    padding: 8px;
+}
+
+#header nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 5%;
+    font-weight: bold;
+}
+
+#header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#header nav ul li a:hover {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#ecb3ff, #809fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+hr {
+    height: 3px;
+    background-color: #ff4dd2;
+    border: none;
+    margin: 0;
+}
+
+
+
+#slideShow img{
+    -webkit-box-shadow: 2px 2px 12px -1px rgba(0,0,0,0.17);
+    -moz-box-shadow: 2px 2px 12px -1px rgba(0,0,0,0.17);
+    box-shadow: 2px 2px 12px -1px rgba(0,0,0,0.17);
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    
+    width: 100%;
+
+}
+
+#stamps{
+    z-index: 1;
+    padding: 10px;
+    margin-top: -45px;
+    margin-left: 46%;
+}
+
+.circle{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#circle1{
+    background-color: #0d0d0d;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+
+.prodCard {
+
+    width: 300px;
+    
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #2c3e50;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 12px -1px rgba(0,0,0,0.17);
+    -moz-box-shadow: 2px 2px 12px -1px rgba(0,0,0,0.17);
+    box-shadow: 2px 2px 12px -1px rgba(0,0,0,0.17);
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+    margin-left: 7%;
+    margin-bottom: 45px;
+}
+
+.prodCard:hover {
+
+    -webkit-box-shadow: 6px 6px 31px 3px #bf00ff;
+    -moz-box-shadow: 6px 6px 31px 3px #bf00ff;
+    box-shadow: 6px 6px 31px 3px #bf00ff;
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+
+}
+
+.listCol {
+    width: 80%;
+    display: inline-block;
+    vertical-align: top;
+}
+.priceCol {
+    width: 15%;
+    display: inline-block;
+}
+
+.coverImgContainer {
+
+    width: inherit;
+    height: 50%;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.coverImg {
+
+    width: inherit;
+    height: auto;
+
+}
+
+.prodDetails {
+
+    padding: 25px;
+
+}
+
+.prodTitle {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.prodDesc {
+
+    font-size: 13px;
+    color: #7f8c8d;
+
+}
+
+.prodPrice {
+    font-weight: 700;
+    color: #1abc9c;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.prodSubTitle {
+
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 0px 5px 0px;
+
+}
+
+.prodSubDetail {
+
+    font-size: 12px;
+    color: #7f8c8d;
+
+}
+
+.clrList {
+    list-style: none;
+}
+
+.clrList .clr {
+    border-radius: 50%;
+    background-color: #000;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+#uploadForm {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.uploadTextField {
+    width: 100%;
+    height: 25px;
+    border: 1px solid #bf00ff;
+    border-radius: 4%;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    margin-top:10px;
+}
+
+footer {
+    background-color: #000;
+    color: #eee;
+}
+
+footer div {
+    display: inline-block;
+    width: 40%;
+    padding: 20px;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    
+    background: #202020;    
+
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    right: 0;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    
+  }
+
+  .sidenav hr{
+    height: 2px;
+    background: white;
+    border: none;
+    width: 90%;
+
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    left:20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #d149ff;
+    border-right: none;
+    padding: 5px;
+    height: 25px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 41px;
+    border: 1px solid #d149ff;
+    background: #d149ff;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 70%;
+    /* 
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ */  
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
+
+
+#loginContainer {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 50px 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #9b59b6;
+  border-radius: 25px;
+  -webkit-box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+}
+
+#loginContainer #cardTitle {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 0px 50px 0px;
+}
+
+#loginContainer:hover {
+  -webkit-box-shadow: 2px 2px 10px -3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 10px -3px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+#loginContainer .txtField {
+  text-indent: 2px;
+  padding: 15px;
+  font-size: 15px;
+  color: #34495e;
+  background-color: #ecf0f1;
+  border: none;
+  border-radius: 10px;
+  caret-color: #9b59b6;
+  display: block;
+  margin: 10px 0px;
+  -webkit-box-shadow: 2px 2px 10px -3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 10px -3px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  width: 250px;
+}
+
+#loginContainer .txtField:focus {
+  outline: none;
+  -webkit-box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+#loginContainer #fName, #loginContainer #lName {
+  width: 107px;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+#loginContainer #forgotPass, #loginContainer #signUp {
+  color: #9b59b6;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  text-align: left;
+  padding: 5px 2px;
+}
+
+#loginContainer #forgotPass:hover, #loginContainer #signUp:hover {
+  text-decoration: underline;
+}
+
+#loginContainer #signUp {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#loginContainer .primary {
+  margin-top: 20px;
+  width: 280px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #9b59b6;
+  color: #fff;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.2);
+}
+
+#loginContainer .primary:hover {
+  -webkit-box-shadow: 2px 2px 10px -3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 10px -3px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+#loginContainer .primary:focus {
+  outline: none;
+}
+
+.logoutBtn{
+  text-decoration: none;
+  padding: 18px;
+  background: #bf00ff;
+  color: antiquewhite;
+}
+/*# sourceMappingURL=style.css.map */

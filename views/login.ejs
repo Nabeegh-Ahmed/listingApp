@@ -1,0 +1,63 @@
+<%- include("header.ejs") %>
+<div id="loginContainer">
+
+  <p id="cardTitle">LOGIN</p>
+  <% include ./partials/messages %>
+  <form action="/users/login" method="POST">
+    <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email"
+            id="emailID" class="txtField"
+           />
+      <input
+           type="password"
+           id="password"
+           name="password"
+           placeholder="Enter Password"
+           id="pass" class="txtField"
+         />
+  
+  <button class="primary" type="submit">LOGIN</button>
+
+  
+  <a href="/users/register" id="signUp">SIGN UP</a>
+
+</div>
+<!--
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>  Login</h1>
+      <% include ./partials/messages %>
+      <form action="/users/login" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter Email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Enter Password"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+      <p class="lead mt-4">
+        No Account? <a href="/users/register">Register</a>
+      </p>
+    </div>
+  </div>
+</div>
+-->

@@ -1,0 +1,52 @@
+<%- include("header.ejs") %>
+<!-- <div id="slideShow" >
+    <img src="images/img1.png" id="slide1"  alt="" srcset="" >
+    <div id="stamps">
+        <span class="circle" id="circle1"></span>
+        <span class="circle" id="circle2"></span>
+        <span class="circle" id="circle3"></span>
+    </div>
+</div> -->
+
+<div id="search">
+    <form action="/search" method="post">
+        <div class="wrap">
+            <div class="search">
+               <input type="text" name="query" class="searchTerm" placeholder="What are you looking for?">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+            </div>
+         </div>
+    </form>
+</div>
+
+<%  for(var i=posts.length-1; i>=0; i--){  let post=posts[i]; %>
+<div class="prodCard">
+
+    <div class="coverImgContainer">
+        <img src="imgUpload/<%= post.img %>" alt="coverImg" class="coverImg"/>
+    </div>
+
+    <div class="prodDetails">
+
+        <div class="listCol">
+            <p class="prodTitle"><%= post.title %></p>
+            <p class="prodDesc"><%= post.description %></p>
+
+            <p class="prodSubTitle">Contact</p>
+            <p class="prodSubDetail"><%= post.contact %></p>
+
+            
+        </div>
+        <div class="priceCol">
+            <p class="prodPrice">$<%= post.askPrice %></p>
+        </div>
+
+    </div>
+
+</div>
+
+<% } %>
+
+<%- include("footer.ejs") %>

@@ -1,0 +1,26 @@
+<%- include("header.ejs") %>
+
+<div class="prodCard">
+
+    <div class="coverImgContainer">
+        <img src="imgUpload/<%= img %>" alt="coverImg" class="coverImg"/>
+    </div>
+
+    <div class="prodDetails">
+
+        <div class="listCol">
+            <p class="prodTitle"><%= title %></p>
+            <p class="prodDesc"><%= description %></p>
+
+            <p class="prodSubTitle">Contact</p>
+            <p class="prodSubDetail"><%= contact %></p>
+
+            
+        </div>
+        <div class="priceCol">
+            <p class="prodPrice">$<%= askPrice %></p>
+        </div>
+
+    </div>
+
+</div>

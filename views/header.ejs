@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Lister</title>
+</head>
+<body>
+    <script src="/styleScripts.js"></script>
+    <div id="header">    
+        <h2>Lister</h2>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/upload">Upload</a></li>
+                <li><a onclick="openNav()">Categories</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <hr>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="category" href="/categories/phones">Phones</a>
+        <hr>
+        <a class="category" href="/categories/appliances">Electronics and Appliances</a>
+        <hr>
+        <a class="category" href="/categories/fashion">Fashion and Beauty</a>
+        <hr>
+        <a class="category" href="/categories/hobbies">Books and Hobbies</a>
+        <hr >
+        <a class="category" href="/categories/property">Property</a>
+        <hr>
+      </div>
+      
+      

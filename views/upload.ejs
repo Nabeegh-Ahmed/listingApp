@@ -1,0 +1,29 @@
+<%- include("header.ejs") %>
+
+<form action="/upload" id="uploadForm" method="post" enctype="multipart/form-data">
+    <label for="title">Product Name: </label>
+    <input name="title" class="uploadTextField" required type="text">
+
+    <label for="description">Description: </label>
+    <input name="description" class="uploadTextField" required type="text">
+
+    <label for="contact">Contact: </label>
+    <input name="contact" class="uploadTextField" required type="number">
+
+    <label for="askPrice">Asking Price: </label>
+    <input name="askPrice" class="uploadTextField" required type="number">
+
+    <label>Select Category</label>
+    <select name="category" id="">
+        <option value="phones">Phones</option>
+        <option value="appliances">Electronics and Home Appliances</option>
+        <option value="fashion">Fashion and Beauty</option>
+        <option value="hobbies">Books and Hobbies</option>
+        <option value="property">Property for Sale</option>
+    </select>
+
+    <input type="file" name="prodImage" required id="">
+
+    <input type="submit" value="Place Ad">
+</form>
+

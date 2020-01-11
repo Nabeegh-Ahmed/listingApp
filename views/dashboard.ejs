@@ -1,0 +1,61 @@
+<%- include("header.ejs") %>
+<h3 style="margin-left:20px;" class="mt-4">Welcome <%= user.name %></h3>
+<form action="/upload" id="uploadForm" method="post" enctype="multipart/form-data">
+    <label for="title">Product Name: </label>
+    <input name="title" class="uploadTextField" required type="text">
+
+    <label for="description">Description: </label>
+    <input name="description" class="uploadTextField" required type="text">
+
+    <label for="contact">Contact: </label>
+    <input name="contact" class="uploadTextField" required type="number">
+
+    <label for="askPrice">Asking Price: </label>
+    <input name="askPrice" class="uploadTextField" required type="number">
+
+    <label>Select Category</label>
+    <select name="category" id="">
+        <option value="phones">Phones</option>
+        <option value="appliances">Electronics and Home Appliances</option>
+        <option value="fashion">Fashion and Beauty</option>
+        <option value="hobbies">Books and Hobbies</option>
+        <option value="property">Property for Sale</option>
+    </select>
+
+    <input type="hidden" name="email" value=<%= user.email %> >
+
+    <input type="file" name="prodImage" required id="">
+    <input type="submit" value="Place Ad">
+</form>
+
+
+<%  for(var i=posts.length-1; i>=0; i--){  let post=posts[i]; %>
+    <div class="prodCard">
+    
+        <div class="coverImgContainer">
+            <img src="imgUpload/<%= post.img %>" alt="coverImg" class="coverImg"/>
+        </div>
+    
+        <div class="prodDetails">
+    
+            <div class="listCol">
+                <p class="prodTitle"><%= post.title %></p>
+                <p class="prodDesc"><%= post.description %></p>
+    
+                <p class="prodSubTitle">Contact</p>
+                <p class="prodSubDetail"><%= post.contact %></p>
+    
+                
+            </div>
+            <div class="priceCol">
+                <p class="prodPrice">$<%= post.askPrice %></p>
+            </div>
+    
+        </div>
+    
+    </div>
+    
+    <% } %>
+
+
+<a href="/users/logout" class="logoutBtn">Logout</a>

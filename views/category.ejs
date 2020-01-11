@@ -1,0 +1,31 @@
+<%- include("header.ejs") %>
+
+<%  posts.forEach(function(post){ %>
+<div class="prodCard">
+
+    <div class="coverImgContainer">
+        <img src="/imgUpload/<%= post.img %>" alt="coverImg" class="coverImg"/>
+    </div>
+
+    <div class="prodDetails">
+
+        <div class="listCol">
+            <p class="prodTitle"><%= post.title %></p>
+            <p class="prodDesc"><%= post.description %></p>
+
+            <p class="prodSubTitle">Contact</p>
+            <p class="prodSubDetail"><%= post.contact %></p>
+
+            
+        </div>
+        <div class="priceCol">
+            <p class="prodPrice">$<%= post.askPrice %></p>
+        </div>
+
+    </div>
+
+</div>
+
+<% }) %>
+
+<%- include("footer.ejs") %>
